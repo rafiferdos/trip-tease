@@ -35,6 +35,10 @@ nav {
     justify-content: space-between;
     gap: 0 20px;
 }
+.toggle-hide {
+    display: none;
+    font-size: 24px;
+}
 nav ul {
     list-style: none;
 }
@@ -54,5 +58,14 @@ nav ul li a {
 }
 /* for mobile device */
 @media only screen and (max-width: 600px){
-    
+    .container { 
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    .side-links {
+        display: none;
+    }
+    .toggle-hide {
+        display: block;
+    }
 }
