@@ -1,0 +1,16 @@
+/* universal */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Mulish", sans-serif;
+}
+/* variables */
+:root {
+    
+}
+/* most used */
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+/* other html classes and ids customization */
