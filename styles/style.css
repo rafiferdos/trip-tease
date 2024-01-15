@@ -6,7 +6,8 @@
 }
 /* variables */
 :root {
-    
+    --theme-color: #FF5400;
+    --primary-text-color: #131318;
 }
 /* most used */
 .container {
@@ -14,3 +15,44 @@
     margin: 0 auto;
 }
 /* other html classes and ids customization */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+.logo-text {
+    font-size: 36px;
+    font-weight: 800;
+}
+.logo-text span {
+    color: var(--theme-color)
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 20px;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-size: 18px;
+}
+.active {
+    color: var(--theme-color);
+}
+.side-links ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0 40px;
+}
+/* for mobile device */
+@media only screen and (max-width: 600px){
+    
+}
