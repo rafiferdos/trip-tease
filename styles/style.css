@@ -406,6 +406,42 @@ footer hr {
     margin: 50px 0;
 }
 
+/* callnow area customization */
+.callnow {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.callnow img {
+    height: 100%;
+    width: 500px;
+
+}
+.callnow-contents {
+    width: 50%;
+}
+.callnow h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--primary-heading-color);
+}
+.callnow p {
+    font-size: 16px;
+    margin: 30px 0;
+}
+.callnow i {
+    padding-right: 10px;
+}
+.callnow button {
+    color: #fff;
+    padding: 20px 35px;
+    background-color: var(--theme-color);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
 
 
 /* for mobile device */
@@ -558,6 +594,23 @@ footer hr {
   }
   .floating-content h3 {
     font-size: 21px;
+  }
+  /* callnow section */
+  .callnow {
+    flex-direction: column;
+  }
+  .callnow-contents {
+    width: 85%;
+    margin-bottom: 40px;
+  }
+  .callnow h2 {
+    font-size: 22px;
+  }
+  .callnow p {
+    font-size: 14px;
+  }
+  .callnow img {
+    width: 350px;
   }
   /* footer section */
   footer .d-flex{
