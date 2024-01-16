@@ -297,6 +297,83 @@ select {
   grid-area: 2 / 4 / 3 / 10;
 }
 
+/* subscribe area customization */
+.subscribe-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+.newsletter {
+    border: 1px solid var(--theme-color);
+    padding: 40px;
+    width: 40%;
+    border-radius: 16px;
+}
+.newsletter h3 {
+    color: var(--primary-heading-color);
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.newsletter hr {
+    background: rgba(19, 19, 24, 0.10);
+    margin-bottom: 20px;
+}
+.newsletter p {
+    color: #5A5A5D;
+    padding-bottom: 30px;
+}
+.newsletter input {
+    width: 92%;
+    padding: 20px 0;
+}
+.newsletter input {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(19, 19, 24, 0.05);
+    padding-left: 30px;
+}
+.newsletter input[type="button"] {
+    background-color: var(--theme-color);
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+    width: 100%;
+    padding-left: 0;
+}
+.subscribe-seciton-img-tag {
+    width: 60%;
+    position: relative;
+}
+.floating-content {
+    background: var(--theme-color);
+    border-radius: 16px;
+    width: 325px;
+    height: 120px;
+    transform: rotate(-19.628deg);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+}
+.floating-content p {
+    font-size: 24px;
+}
+.floating-content h3 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+
+
+
+
 /* for mobile device */
 @media only screen and (max-width: 600px) {
   /* most used */
@@ -411,5 +488,41 @@ select {
   }
   .card3 {
     grid-area: 3 / 1 / 4 / 2;
+  }
+  /* subscribe section */
+  .subscribe-section {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .subscribe-seciton-img-tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .subscribe-section img {
+    height: 300px;
+    width: 335px;
+    display: block;
+  }
+  .subscribe-section {
+    margin-top: 50px;
+  }
+  .newsletter {
+    width: 80%;
+  }
+  .newsletter input {
+    padding-left: 20px;
+  }
+  .floating-content {
+    width: 210px;
+    top: 50%;
+    left: 25%;
+  }
+  .floating-content p {
+    font-size: 15px;
+  }
+  .floating-content h3 {
+    font-size: 21px;
   }
 }
